@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>User List</title>
+</head>
+<body>
+ <div class="overall-container">
+    <!-- form -->
+    <div class="container">
+        <form id="add-new-user-form">
+          <div class="input_container">
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username" required>
+          </div>
+          <div class="input_container">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+          <button type="submit">ADD USER</button>
+        </form>
+    </div>
+
+    <!-- Listing -->
+    <div class="container">
+       <p class="title">Users List</p>
+       <ul class="user-list" id="user-list">
+          <li>
+            <div class="username">nesamani</div>
+            <div class="email">nesamani_contractor@gmail.com</div>
+          </li>
+       </ul>
+    </div>
+ </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
